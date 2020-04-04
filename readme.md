@@ -1,16 +1,17 @@
-DEPRECATED - DO NOT USE
+Note to new users
 =======================
 
-This repo isn't just resting - it's dead. Why? Because it's been upstreamed to the master TianoCore UEFI branch - https://github.com/tianocore/edk2-platforms/tree/master/Platform/RaspberryPi/RPi3
+RaspberryPiPkg is deprecated, because it's been upstreamed to the master TianoCore UEFI branch - https://github.com/tianocore/edk2-platforms/tree/master/Platform/RaspberryPi/RPi3
 
-This is going to remain up only for historical purpose.
+This fork (the latest binary release) is used by the [Windows on Raspberry imager](https://www.worproject.ml) as a fallback when using Windows builds earlier than 17763.
+The reason for this is that as of 4th April 2020, the upstream UEFI doesn't include the HypDxe hypervisor responsible for patching the NT HAL. Without it, those old Windows builds will refuse to boot on SoCs using the Broadcom Interrupt Controller. 
 
-Also see https://rpi4-uefi.dev
+### New releases (for Pi 4 too) can be found here: https://github.com/pftf
 
 64-bit Tiano Core UEFI for the Raspberry Pi 3
 =============================================
 
-Last updated Feb 18th, 2019.
+Last updated Apr 4th, 2020.
 
 This is a port of 64-bit Tiano Core UEFI firmware for the Pi 3/3B+ platforms,
 based on [Ard Bisheuvel's 64-bit](http://www.workofard.com/2017/02/uefi-on-the-pi/)
